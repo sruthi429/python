@@ -1,4 +1,3 @@
-
 word1 = input("Enter first string: ")
 word2 = input("Enter second string: ")
 def is_anagram(str1, str2):
