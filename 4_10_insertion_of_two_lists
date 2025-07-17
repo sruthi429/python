@@ -1,0 +1,10 @@
+list1 =list(map(int,input("enter a list1:").split(",")))
+list2 =list(map(int,input("enter a list2:").split(",")))
+
+def common_elements(list1, list2):
+    result = []
+    for elem in list1:
+        if elem in list2 and elem not in result:
+            result.append(elem)
+    return result
+print(common_elements(list1, list2))

@@ -1,0 +1,10 @@
+user_input = list(map(int, input("Enter a list: ").split(",")))
+def find_duplicates(lst):
+    duplicates = []
+    for i in range(len(lst)):
+        for j in range(i + 1, len(lst)):  
+            if lst[i] == lst[j] and lst[i] not in duplicates:
+                duplicates.append(lst[i])
+    return duplicates
+
+print("Duplicates in the list:", find_duplicates(user_input))
